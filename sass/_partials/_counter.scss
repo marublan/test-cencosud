@@ -1,0 +1,84 @@
+// Countdown
+.counter {
+	font-family: 'source_sans_prolight', Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	margin: 0 auto;
+	text-align: center;
+
+	div {
+		display: inline-block;
+		line-height: 1;
+		padding: 15px;
+	}
+
+	span {
+		display: block;
+		font-size: 20px;
+	}
+
+	#days {
+		font-size: 30px;
+		color: #fe0000;
+	}
+
+	#hours {
+		font-size: 30px;
+		color: #0c86c7;
+	}
+
+	#minutes {
+		font-size: 30px;
+			color: #fecd0e;
+	}
+
+	#seconds {
+		color: #00a653;
+		display: none;
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 600px) {
+    .counter { 
+    	div {
+    		padding: 15px;
+    	}
+		#days {
+			font-size: 50px;
+		}
+					
+		#hours {
+			font-size: 50px;
+		}
+
+		#minutes {
+			font-size: 50px;
+		}
+
+		#seconds {
+			font-size: 25px;
+			display: inline-block;
+		}
+    }
+}
+
+@media (min-width: 1024px) {
+    .counter { 
+		#days {
+			font-size: 100px;
+		}
+					
+		#hours {
+			font-size: 100px;
+		}
+
+		#minutes {
+			font-size: 100px;
+		}
+
+		#seconds {
+			display: inline-block;
+			font-size: 50px;
+		}
+    }
+}

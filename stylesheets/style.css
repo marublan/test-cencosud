@@ -1,0 +1,316 @@
+/* line 1, ../sass/_partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 24, ../sass/_partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 29, ../sass/_partials/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 33, ../sass/_partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../sass/_partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 47, ../sass/_partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'source_sans_probold';
+  src: url("../fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source_sans_prolight';
+  src: url("../fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 2, ../sass/_partials/_counter.scss */
+.counter {
+  font-family: 'source_sans_prolight', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 8, ../sass/_partials/_counter.scss */
+.counter div {
+  display: inline-block;
+  line-height: 1;
+  padding: 15px;
+}
+/* line 14, ../sass/_partials/_counter.scss */
+.counter span {
+  display: block;
+  font-size: 20px;
+}
+/* line 19, ../sass/_partials/_counter.scss */
+.counter #days {
+  font-size: 30px;
+  color: #fe0000;
+}
+/* line 24, ../sass/_partials/_counter.scss */
+.counter #hours {
+  font-size: 30px;
+  color: #0c86c7;
+}
+/* line 29, ../sass/_partials/_counter.scss */
+.counter #minutes {
+  font-size: 30px;
+  color: #fecd0e;
+}
+/* line 34, ../sass/_partials/_counter.scss */
+.counter #seconds {
+  color: #00a653;
+  display: none;
+  font-size: 15px;
+}
+
+@media (min-width: 600px) {
+  /* line 43, ../sass/_partials/_counter.scss */
+  .counter div {
+    padding: 15px;
+  }
+  /* line 46, ../sass/_partials/_counter.scss */
+  .counter #days {
+    font-size: 50px;
+  }
+  /* line 50, ../sass/_partials/_counter.scss */
+  .counter #hours {
+    font-size: 50px;
+  }
+  /* line 54, ../sass/_partials/_counter.scss */
+  .counter #minutes {
+    font-size: 50px;
+  }
+  /* line 58, ../sass/_partials/_counter.scss */
+  .counter #seconds {
+    font-size: 25px;
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 67, ../sass/_partials/_counter.scss */
+  .counter #days {
+    font-size: 100px;
+  }
+  /* line 71, ../sass/_partials/_counter.scss */
+  .counter #hours {
+    font-size: 100px;
+  }
+  /* line 75, ../sass/_partials/_counter.scss */
+  .counter #minutes {
+    font-size: 100px;
+  }
+  /* line 79, ../sass/_partials/_counter.scss */
+  .counter #seconds {
+    display: inline-block;
+    font-size: 50px;
+  }
+}
+/* line 1, ../sass/_partials/_slider.scss */
+#slider {
+  height: auto;
+  min-height: 50px;
+  position: relative;
+  width: 100%;
+}
+/* line 7, ../sass/_partials/_slider.scss */
+#slider .arrow {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  display: block;
+  height: 34px;
+  margin-top: -17px;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  visibility: visible;
+  width: 18px;
+  z-index: 1;
+}
+/* line 23, ../sass/_partials/_slider.scss */
+#slider .arrow.left {
+  left: 15px;
+  transform: rotateY(-180deg) translateY(-50%);
+}
+/* line 28, ../sass/_partials/_slider.scss */
+#slider .arrow.right {
+  right: 15px;
+  transform: translateY(-50%);
+}
+/* line 33, ../sass/_partials/_slider.scss */
+#slider .arrow:hover {
+  opacity: 1;
+}
+/* line 38, ../sass/_partials/_slider.scss */
+#slider .slide {
+  height: auto;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+/* line 45, ../sass/_partials/_slider.scss */
+#slider .slide li {
+  display: none;
+}
+/* line 49, ../sass/_partials/_slider.scss */
+#slider .slide img {
+  max-width: 100%;
+}
+
+/* line 2, ../sass/_partials/_main.scss */
+body {
+  cursor: default;
+  font-family: 'source_sans_proregular', Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-width: 320px;
+}
+/* line 8, ../sass/_partials/_main.scss */
+body * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/_partials/_main.scss */
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* line 20, ../sass/_partials/_main.scss */
+.title {
+  font-family: 'source_sans_probold', Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 29, ../sass/_partials/_main.scss */
+.content {
+  margin-bottom: 15px;
+}
+/* line 32, ../sass/_partials/_main.scss */
+.content img {
+  margin: 0 15px 15px 0;
+  max-width: 100%;
+  width: auto;
+}
+/* line 38, ../sass/_partials/_main.scss */
+.content p {
+  font-size: 13px;
+  line-height: 15px;
+  padding: 0 15px 15px 0;
+}
+
+/* line 46, ../sass/_partials/_main.scss */
+.footer {
+  height: 150px;
+  background-color: #0c86c7;
+}
+/* line 50, ../sass/_partials/_main.scss */
+.footer .social {
+  display: block;
+  position: relative;
+  text-align: center;
+  top: 45%;
+}
+/* line 56, ../sass/_partials/_main.scss */
+.footer .social li {
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 60, ../sass/_partials/_main.scss */
+.footer .social li img {
+  vertical-align: bottom;
+  margin-right: 4px;
+}
+/* line 66, ../sass/_partials/_main.scss */
+.footer .social a {
+  color: white;
+  opacity: 0.5;
+  text-decoration: none;
+}
+/* line 71, ../sass/_partials/_main.scss */
+.footer .social a:hover {
+  opacity: 1;
+}
+
+@media (min-width: 600px) {
+  /* line 79, ../sass/_partials/_main.scss */
+  .wrapper {
+    max-width: 1200px;
+  }
+
+  /* line 83, ../sass/_partials/_main.scss */
+  .content {
+    align-items: flex-start;
+    display: flex;
+  }
+  /* line 87, ../sass/_partials/_main.scss */
+  .content img {
+    flex-basis: 200px;
+    margin-bottom: 0;
+  }
+  /* line 92, ../sass/_partials/_main.scss */
+  .content .description {
+    flex-grow: 1;
+  }
+}
